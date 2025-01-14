@@ -1,0 +1,112 @@
+body {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    background-color: #e8e8fc;
+    color: #333;
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.problem-container {
+    display: flex;
+    justify-content: space-between; /* Space between the question and the answer container */
+    align-items: center; /* Vertically align items */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding is included in width calculations */
+}
+
+.question {
+    flex: 1; /* Take up as much space as possible */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left; /* Align text to the left */
+    margin-right: 20px; /* Add space between the question and the input area */
+}
+
+.answer-container {
+    flex: 1; /* Take up as much space as possible */
+    display: flex;
+    flex-direction: column; /* Stack the input and instructions vertically */
+    align-items: flex-start; /* Align items to the left */
+}
+
+input.answer {
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 100%; /* Full width of the .answer-container */
+    max-width: calc(100% - 20px); /* Ensure it stays within the container */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding in width calculations */
+    -moz-appearance: textfield; /* Disable arrows in Firefox */
+    -webkit-appearance: none; /* Disable arrows in Chrome, Safari, and Edge */
+    appearance: none; /* Disable arrows for modern browsers */
+}
+
+input.answer::-webkit-inner-spin-button,
+input.answer::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Remove spin buttons for Chrome, Safari, and Edge */
+    margin: 0; /* Prevent shifting */
+}
+
+.instructions {
+    margin-top: 10px; /* Space between input and instructions */
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.counter {
+    display: flex;
+    justify-content: center; /* Center align the icons */
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.5rem; /* Adjust size of the icons */
+    gap: 10px; /* Space between icons */
+}
+
+.counter i {
+    transition: transform 0.3s ease;
+}
+
+.counter i.correct {
+    color: rgb(245, 204, 2); /* Yellow star for correct answers */
+}
+
+.counter i.incorrect {
+    color: rgb(232, 3, 3); /* Red cross for incorrect answers */
+}
+
+h4 {
+    margin-top: 100px;
+}
+
+.summary-msg {
+    margin-top: 80px;
+}
+
+.summary h2 {
+    color: green;
+}

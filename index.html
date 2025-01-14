@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <!-- to use Roboto in body -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" 
+  rel="stylesheet">
+  <!-- to use star and cross icons in counter -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <title>Alex's Maths Practice</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="logo" width="50%" src="images/logo.png" alt="game logo" />
+      <h1>Times Tables Game</h1>
+    </header>
+    <div class="problem-container">
+      <div class="question"></div>
+      <div class="answer-container">
+        <input 
+        type="number" 
+        class="answer" 
+        name="answer" 
+        autocomplete="off" 
+        autofocus="on" 
+        placeholder="Type your answer here">
+        <div class="instructions">Press "Enter" to check your answer</div>
+      </div>
+    </div>
+    <div class="feedback"></div>
+    <div class="counter">
+      <!-- Icons will be dynamically added here -->
+    </div>
+    <div class="summary" style="display: none">
+      <h2 id="finish">You have finished this game, well done!</h2>
+      <h3 class="summary-msg"></h3>
+      <h4>Press "Enter" to play again</h4>
+    </div>
+    
+  </div>
+</body>
+</html>
