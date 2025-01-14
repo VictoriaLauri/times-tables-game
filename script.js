@@ -9,7 +9,7 @@ const summaryMsg = document.querySelector('.summary-msg');
 let questionCount = 0;
 let correctCount = 0;
 let incorrectCount = 0;
-const totalQuestions = 4;
+const totalQuestions = 15;
 let currentQuestion = {};
 
 const generateQuestion = () => {
